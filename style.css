@@ -2,11 +2,12 @@
     width: 100%;
 }
 
-h1 {
-    text-align: center;
+#title_main {
+    text-align: left;
+    padding-left: 20px;
 }
 
-h2 {
+.title_center {
     text-align: center;
 }
 
