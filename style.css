@@ -1,3 +1,17 @@
+#p_titleMenu {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#logoMenu {
+    display: inline-block;
+}
+
+#img_logoMenu {
+    height: 5%;
+    display: inline-block;
+}
+
 #img_banner {
     width: 100%;
 }
@@ -15,9 +29,12 @@ p {
     text-align: left;
 }
 
-ul {
+nav {
     display: inline-block;
     vertical-align: top;
+}
+
+ul {
     width: 20%;
     margin-right: 15%;
 }

@@ -1,0 +1,22 @@
+#p_titleMenu {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#logoMenu {
+    display: inline-block;
+}
+
+#img_logoMenu {
+    height: 5%;
+    display: inline-block;
+}
+
+header {
+    background-color: #666;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: top;
+}
