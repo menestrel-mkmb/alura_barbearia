@@ -1,15 +1,32 @@
 #p_titleMenu {
-    display: inline-block;
+    display: inline;
     vertical-align: top;
 }
 
 #logoMenu {
-    display: inline-block;
+    display: inline;
 }
 
 #img_logoMenu {
     height: 5%;
-    display: inline-block;
+    display: inline;
+}
+
+nav {
+    vertical-align: top;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
 #img_banner {
@@ -29,14 +46,11 @@ p {
     text-align: left;
 }
 
-nav {
-    display: inline-block;
-    vertical-align: top;
-}
-
-ul {
+#ul_beneficios {
     width: 20%;
     margin-right: 15%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #cont_missao {
@@ -62,5 +76,5 @@ em strong {
 }
 
 .img_beneficios {
-    width: 50%;
+    width: 20%;
 }
