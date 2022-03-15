@@ -1,5 +1,6 @@
 header {
     background-color: #666;
+    padding: 20px;
 }
 
 #p_titleMenu {
@@ -18,6 +19,9 @@ header {
 
 nav {
     vertical-align: top;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 nav li {

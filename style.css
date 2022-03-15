@@ -1,3 +1,14 @@
+header {
+    background-color: #666;
+    padding: 20px;
+}
+
+.div_menuBox {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
 #p_titleMenu {
     display: inline;
     vertical-align: top;
@@ -14,6 +25,9 @@
 
 nav {
     vertical-align: top;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 nav li {
