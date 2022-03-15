@@ -3,9 +3,17 @@ header {
     padding: 20px;
 }
 
+.div_menuBox {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
 #p_titleMenu {
     display: inline;
     vertical-align: top;
+    position: relative;
+    top: 110px;
 }
 
 #logoMenu {
@@ -20,7 +28,7 @@ header {
 nav {
     vertical-align: top;
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
 }
 

@@ -12,6 +12,8 @@ header {
 #p_titleMenu {
     display: inline;
     vertical-align: top;
+    position: relative;
+    top: 110px;
 }
 
 #logoMenu {
@@ -26,7 +28,7 @@ header {
 nav {
     vertical-align: top;
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
 }
 
