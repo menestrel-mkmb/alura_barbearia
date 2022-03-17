@@ -1,6 +1,6 @@
 header {
-    background-color: #BBBBBB;
     padding: 20px;
+    border: 2px solid black;
 }
 
 .div_menu-box {
@@ -45,6 +45,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #f8b93b;
+    text-decoration: underline;
+}
+
 .ul_produtos {
     width: 940px;
     margin: 0px auto;
@@ -52,10 +57,21 @@ nav a {
 }
 
 .ul_produtos li {
-    width: 30%;
     display: inline-block;
-    vertical-align: top;
     text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px 1.0%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.ul_produtos li:hover {
+    color: #f8b93b;
+    border-color: #f8b93b;
 }
 
 .ul_produtos h2 {
@@ -72,7 +88,7 @@ nav a {
 }
 
 .p_produto-preco {
-    padding: 5px;
     font-size: 22px;
     font-weight: bold;
+    margin-top: 10px;
 }
