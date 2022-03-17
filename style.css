@@ -1,26 +1,26 @@
 header {
-    background-color: #666;
+    background-color: #BBBBBB;
     padding: 20px;
 }
 
-.div_menuBox {
+.div_menu-box {
     width: 940px;
     position: relative;
     margin: 0 auto;
 }
 
-#p_titleMenu {
+#p_title-menu {
     display: inline;
     vertical-align: top;
     position: relative;
     top: 110px;
 }
 
-#logoMenu {
+#logo-menu {
     display: inline;
 }
 
-#img_logoMenu {
+#img_logo-menu {
     height: 5%;
     display: inline;
 }
