@@ -44,3 +44,8 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
+
+.ul_produtos {
+    margin: 50px 40px 40px 20px;
+    text-align: center;
+}
