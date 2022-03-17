@@ -1,26 +1,26 @@
 header {
-    background-color: #666;
+    background-color: #BBBBBB;
     padding: 20px;
 }
 
-.div_menuBox {
+.div_menu-box {
     width: 940px;
     position: relative;
     margin: 0 auto;
 }
 
-#p_titleMenu {
+#p_title-menu {
     display: inline;
     vertical-align: top;
     position: relative;
     top: 110px;
 }
 
-#logoMenu {
+#logo-menu {
     display: inline;
 }
 
-#img_logoMenu {
+#img_logo-menu {
     height: 5%;
     display: inline;
 }
@@ -46,6 +46,33 @@ nav a {
 }
 
 .ul_produtos {
-    margin: 50px 40px 40px 20px;
+    width: 940px;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.ul_produtos li {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
+}
+
+.ul_produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ul_produtos img {
+    width: 80%;
+}
+
+.p_produto-descricao {
+    font-size: 18px;
+}
+
+.p_produto-preco {
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
 }
