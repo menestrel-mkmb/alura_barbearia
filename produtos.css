@@ -74,6 +74,15 @@ nav a:hover {
     border-color: #f8b93b;
 }
 
+.ul_produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.ul_produtos li:active {
+    color: #08ce61;
+    border-color: #08ce61;
+}
+
 .ul_produtos h2 {
     font-size: 30px;
     font-weight: bold;
