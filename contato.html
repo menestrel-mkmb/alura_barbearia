@@ -15,7 +15,7 @@
 
     <header>
         <div class="div_menu-box">
-            <h1 id="logo-menu"><img id="img_logo-menu" src="logo.png"><p id="p_title-menu"> Contato</p></h1>
+            <h1 id="logo-menu"><img id="img_logo-menu" src="logo.png" alt="Logo da Barbearia Alura"><p id="p_title-menu"> Contato</p></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -27,38 +27,73 @@
     </header>
 
     <main>
+
         <form>
-            <label for="inp_nome-completo">Nome: </label>
-                <input type="text" id="inp_nome-completo">
+            <fieldset>
+                <label for="inp_nome-completo">Nome: </label>
+                    <input class="input_main" type="text" id="inp_nome-completo" required placeholder="Joao da Silva">
+                
+                <label for="inp_email">e-mail: </label>
+                    <input class="input_main" type="email" id="inp_email" required placeholder="joaodasilva@email.com">
+                
+                <label for="inp_telefone">Telefone: </label>
+                    <input class="input_main" type="tel" id="inp_telefone" required placeholder="(00) 9 0000-0000">
+                
+                <label for="txta_mensagem">Mensagem: </label>
+                    <textarea class="input_main" id="txta_mensagem" cols="30" rows="10" required placeholder="Escreva sua mensagem aqui">
+                    </textarea>
+            </fieldset>
             
-            <label for="inp_email">e-mail: </label>
-                <input type="text" id="inp_email">
-            
-            <label for="inp_telefone">Telefone: </label>
-                <input type="text" id="inp_telefone">
-            
-            <label for="txta_mensagem">Mensagem: </label>
-                <textarea id="txta_mensagem" cols="30" rows="10">
-                </textarea>
-            
-            <div>
-                <p>Como prefere o nosso contato?</p>
-                <label for="inpr_email"> e-mail</label>
-                    <input type="radio" name="contato" value="email" id="inpr_email">
-                <label for="inpr_celular"> SMS</label>
-                    <input type="radio" name="contato" value="celular" id="inpr_celular">
-                <label for="inpr_wpp"> WhatsApp</label>
-                    <input type="radio" name="contato" value="wpp" id="inpr_wpp">
-            </div>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="inpr_email"><input type="radio" name="contato" value="email" id="inpr_email"> e-mail</label>
+                    
+                <label for="inpr_celular"><input type="radio" name="contato" value="celular" id="inpr_celular"> SMS</label>
+                    
+                <label for="inpr_wpp"><input type="radio" name="contato" value="wpp" id="inpr_wpp" checked> WhatsApp</label>                    
+            </fieldset>
 
-            <label><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+            <fieldset>
+                <legend>Qual horario prefere ser atendido?</legend>
+                <select>
+                    <option>Manha</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
 
-            <input type="submit" value="Enviar">
+            <label><input class="cbx_newsletter" type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+
+            <input class="input_send" type="submit" value="Enviar">
         </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
     </main>
     
     <footer>
-        <img src="logo-branco.png">
+        <img src="logo-branco.png" alt="Logo da Barbearia Alura">
         <p class="copyright">&copy; Copyright Alura - Todos os direitos reservados 2022</p>
     </footer>
 </body>
