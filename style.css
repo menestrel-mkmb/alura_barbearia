@@ -113,3 +113,25 @@ footer {
     font-size: 13px;
     margin: 20px 0px;
 }
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+form input {
+    display: block;
+    width: 50%;
+    margin: 10px 0 10px 0;
+    padding: 5px 10px;
+}

@@ -27,13 +27,34 @@
     </header>
 
     <main>
-        <div id="ul_forms-contato">
-            <ul>
-                <li>nome: </li>
-                <li>e-mail:</li>
-                <li>mensagem:</li>
-            </ul>
-        </div>
+        <form>
+            <label for="inp_nome-completo">Nome: </label>
+                <input type="text" id="inp_nome-completo">
+            
+            <label for="inp_email">e-mail: </label>
+                <input type="text" id="inp_email">
+            
+            <label for="inp_telefone">Telefone: </label>
+                <input type="text" id="inp_telefone">
+            
+            <label for="txta_mensagem">Mensagem: </label>
+                <textarea id="txta_mensagem" cols="30" rows="10">
+                </textarea>
+            
+            <div>
+                <p>Como prefere o nosso contato?</p>
+                <label for="inpr_email"> e-mail</label>
+                    <input type="radio" name="contato" value="email" id="inpr_email">
+                <label for="inpr_celular"> SMS</label>
+                    <input type="radio" name="contato" value="celular" id="inpr_celular">
+                <label for="inpr_wpp"> WhatsApp</label>
+                    <input type="radio" name="contato" value="wpp" id="inpr_wpp">
+            </div>
+
+            <label><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+
+            <input type="submit" value="Enviar">
+        </form>
     </main>
     
     <footer>
