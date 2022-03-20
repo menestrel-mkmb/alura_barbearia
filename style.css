@@ -1,3 +1,7 @@
+/*
+ * CSS Header
+*/
+
 header {
     padding: 20px;
     border: 2px solid black;
@@ -49,6 +53,53 @@ nav a:hover {
     color: #f8b93b;
     text-decoration: underline;
 }
+
+/*
+ * CSS Footer
+*/
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0px;
+}
+
+/*
+ * CSS Body
+*/
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*
+ * CSS index.html
+*/
+
+.banner {
+    width: 100%;
+}
+
+.title_main {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+}
+
+.sec_principal {
+    margin: 0 0 1em 0;
+}
+
+/*
+ * CSS produtos.html
+*/
 
 .ul_produtos {
     width: 940px;
@@ -102,22 +153,9 @@ nav a:hover {
     margin-top: 10px;
 }
 
-footer {
-    text-align: center;
-    background: url("bg.jpg");
-    padding: 40px 0px;
-}
-
-.copyright {
-    color: white;
-    font-size: 13px;
-    margin: 20px 0px;
-}
-
-main {
-    width: 940px;
-    margin: 0 auto;
-}
+/*
+ * CSS contato.html
+*/
 
 form {
     margin: 40px 0;
