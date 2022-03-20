@@ -91,10 +91,29 @@ main {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em 0;
+    clear: left;
 }
 
-.sec_principal {
+.img_utensilios {
+    width: 15%;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.sec_principal p {
     margin: 0 0 1em 0;
+}
+
+.sec_principal strong {
+    font-weight: bold;
+}
+
+.sec_principal em {
+    font-style: italic;
+}
+
+.img_beneficios {
+    width: 60%;
 }
 
 /*
