@@ -79,14 +79,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
+main:not(.main_index) {
     width: 940px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 /*
  * CSS index.html
 */
+
+.main_index {
+    padding: 3em 0;
+    background: #FCFCFC;
+}
 
 .img_banner {
     width: 100%;
@@ -103,6 +108,11 @@ main {
     width: 15%;
     float: left;
     margin: 0 2em 0 0;
+}
+
+.sec_main {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .sec_main p {
@@ -125,11 +135,22 @@ em strong {
 
 .sec_map {
     padding: 3em 0;
+    background: linear-gradient(#FCFCFC, #888888);
+}
+
+.div_map {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .sec_map p {
     text-align: center;
     margin: 0 0 2em 0;
+}
+
+.sec_beneficios {
+    background: #888888;
+    color: white;
 }
 
 .div_beneficios {
@@ -146,6 +167,10 @@ em strong {
 
 .ul_itens {
     line-height: 1.5em;
+}
+
+.ul_itens:before {
+    content: '☆';
 }
 
 .ul_itens:first-child {
