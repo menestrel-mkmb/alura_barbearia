@@ -59,20 +59,25 @@ nav a:hover {
 */
 
 footer {
+    clear: both;
     text-align: center;
     background: url("bg.jpg");
-    padding: 40px 0px;
+    padding: 3em 0;
 }
 
 .copyright {
     color: white;
     font-size: 13px;
-    margin: 20px 0px;
+    margin: 2em 0;
 }
 
 /*
  * CSS Body
 */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 main {
     width: 940px;
@@ -83,37 +88,80 @@ main {
  * CSS index.html
 */
 
-.banner {
+.img_banner {
     width: 100%;
 }
 
 .title_main {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1em 0;
+    margin: 1em 0 1em 0;
     clear: left;
 }
 
 .img_utensilios {
     width: 15%;
     float: left;
-    margin: 0 20px 0 0;
+    margin: 0 2em 0 0;
 }
 
-.sec_principal p {
+.sec_main p {
     margin: 0 0 1em 0;
 }
 
-.sec_principal strong {
+.sec_main strong {
     font-weight: bold;
 }
 
-.sec_principal em {
+.sec_main em {
     font-style: italic;
+}
+
+em strong {
+    font-family: 'Inspiration', cursive;
+    font-size: 2em;
+    color: #f8b93b;
+}
+
+.sec_map {
+    padding: 3em 0;
+}
+
+.sec_map p {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+.div_beneficios {
+    padding: 3em 0;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.ul_beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ul_itens {
+    line-height: 1.5em;
+}
+
+.ul_itens:first-child {
+    font-weight: bold;
 }
 
 .img_beneficios {
     width: 60%;
+    float: right;
+    margin: 0 0 2em 0;
+}
+
+.div_video {
+    clear: both;
+    width: 560px;
+    margin: 2em auto;
 }
 
 /*
