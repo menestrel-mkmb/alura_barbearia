@@ -89,7 +89,7 @@ main:not(.main_index) {
 */
 
 .main_index {
-    padding: 3em 0;
+    padding: 1em 0 0 0;
     background: #FCFCFC;
 }
 
@@ -181,12 +181,18 @@ em strong {
     width: 60%;
     float: right;
     margin: 0 0 2em 0;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.img_beneficios:hover {
+    opacity: 0.7;
 }
 
 .div_video {
     clear: both;
     width: 560px;
-    margin: 2em auto;
+    margin: 0 auto;
 }
 
 /*
