@@ -1,7 +1,6 @@
 /*
  * CSS Header
 */
-
 header {
     padding: 20px;
     border: 2px solid black;
@@ -53,7 +52,6 @@ nav a:hover {
     color: #f8b93b;
     text-decoration: underline;
 }
-
 /*
  * CSS Footer
 */
@@ -215,7 +213,7 @@ iframe.div_video {
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 10px 1.0%;
+    margin: 10px auto;
     padding: 30px 20px;
     box-sizing: border-box;
     align-content: center;
@@ -314,11 +312,7 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
-    .div_menu-box, .sec_main, .sec_map, .sec_beneficios, .div_map, .div_beneficios {
-        width: auto;
-    }
-
-    .div_video {
+    main:not(.main_index), .div_menu-box, .sec_main, .sec_map, .sec_beneficios, .div_map, .div_beneficios, .div_video, .ul_produtos {
         width: auto;
     }
 
@@ -334,4 +328,23 @@ td, th {
         width: 100%;
         box-shadow: none;
     }
+
+    .main_produtos {
+        width: 100%;
+    }
+    
+    .ul_produtos {
+        width: 100%;
+        float: left;
+    }
+
+    .ul_produtos li:nth-child(n){
+        width: 80%;
+        display: block;
+    }
+
+    form {
+        margin: 2em 2em;
+    }
+
 }
