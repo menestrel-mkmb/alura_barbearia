@@ -1,17 +1,16 @@
 import { Cliente } from "./Cliente.js";
+//import { Conta } from "./Conta.js";
 
 export class ContaCorrente {
-    static numeroDeContas = 0;
-
-    agencia;
-    #saldo = 0;
-    #cliente;
+    conta;
+    cliente = new Cliente();
+    saldo = 0;
 
     sacar(valor){
         if(!(typeof(valor) == "number") || valor <= 0) return;
         
-        if(this.#saldo >= valor){
-            this.#saldo -= valor;
+        if(this._saldo >= valor){
+            this._saldo -= valor;
             return valor;
         } else {
             return 0;
@@ -21,7 +20,7 @@ export class ContaCorrente {
     depositar(valor){
         if(!(typeof(valor) == "number") || valor <= 0) return;
         
-        this.#saldo += valor;
+        this._saldo += valor;
         return valor;
     }
 
@@ -29,36 +28,47 @@ export class ContaCorrente {
         return conta.depositar(this.sacar(valor));
     }
 
-    get saldo(){
-        return this.#saldo;
+    extrato(){
+        return this._saldo;
     }
 
+    get conta(){
+        return this._conta;
+    }
+
+    get saldo(){
+        return this._saldo;
+    }
+
+    /**
+     * @param {Cliente} novoTitular
+     * novoTitular: Cliente -> .ts
+     */
     set cliente(novoTitular){
         if(!(novoTitular instanceof Cliente)) return;
 
-        this.#cliente = novoTitular;
+        this._cliente = novoTitular;
         return true;
     }
 
     get cliente(){
-        return this.#cliente;
+        return this._cliente;
     }
 
     get clienteName(){
-        if(this.#cliente == undefined || this.#cliente == null) return;
-            return this.#cliente.nome;
+        if(this._cliente == undefined || this._cliente == null) return;
+            return this._cliente.nome;
     }
 
     get clienteCpf(){
-        if(this.#cliente == undefined || this.#cliente == null) return;
-            return this.#cliente.cpf;
+        if(this._cliente == undefined || this._cliente == null) return;
+            return this._cliente.cpf;
     }
 
-    constructor(agencia_, cliente_){
-        this.agencia = agencia_;
-        this.#cliente = cliente_;
-
-        ContaCorrente.numeroDeContas++;
+    constructor(conta_, cliente_, saldo_){
+        this._conta = conta_;
+        this._cliente = cliente_;
+        this._saldo = saldo_;
     }
 }
 
