@@ -1,12 +1,13 @@
 export class Cliente {
+    nome;
     _cpf;
     _rg;
 
-    get cpf(){
+    get _cpf(){
         return this._cpf;
     }
 
-    get rg(){
+    get _rg(){
         return this._rg;
     }
 
