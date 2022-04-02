@@ -4,6 +4,7 @@ export class Conta {
     _agencia;
     _cliente;
     _saldo = 0;
+    _tipo;
 
     sacar(valor){
         if(!(typeof(valor) == "number") || valor <= 0) return;
@@ -39,6 +40,10 @@ export class Conta {
         return this._saldo;
     }
 
+    get _tipo(){
+        return this._tipo;
+    }
+
     /**
      * @param {Cliente} novoTitular
      * novoTitular: Cliente -> .ts
@@ -60,9 +65,10 @@ export class Conta {
             return this._cliente.cpf;
     }
 
-    constructor(agencia_, cliente_, saldoInicial_){
+    constructor(agencia_, cliente_, saldoInicial_, tipo_){
         this._saldo = saldoInicial_;
         this._cliente = cliente_;
         this._agencia = agencia_;
+        this._tipo = tipo_;
     }
 }
