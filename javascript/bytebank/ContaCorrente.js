@@ -1,9 +1,11 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente {
+    static numeroDeContas = 0;
+
     agencia;
     #saldo = 0;
-    cliente;
+    #cliente;
 
     sacar(valor){
         if(!(typeof(valor) == "number") || valor <= 0) return;
@@ -27,13 +29,36 @@ export class ContaCorrente {
         return conta.depositar(this.sacar(valor));
     }
 
-    verSaldo(){
+    get saldo(){
         return this.#saldo;
     }
 
-    definirTitularidade(novoTitular){
-        this.cliente = novoTitular;
+    set cliente(novoTitular){
+        if(!(novoTitular instanceof Cliente)) return;
+
+        this.#cliente = novoTitular;
         return true;
+    }
+
+    get cliente(){
+        return this.#cliente;
+    }
+
+    get clienteName(){
+        if(this.#cliente == undefined || this.#cliente == null) return;
+            return this.#cliente.nome;
+    }
+
+    get clienteCpf(){
+        if(this.#cliente == undefined || this.#cliente == null) return;
+            return this.#cliente.cpf;
+    }
+
+    constructor(agencia_, cliente_){
+        this.agencia = agencia_;
+        this.#cliente = cliente_;
+
+        numeroDeContas++;
     }
 }
 
