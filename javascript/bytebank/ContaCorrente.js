@@ -58,7 +58,7 @@ export class ContaCorrente {
         this.agencia = agencia_;
         this.#cliente = cliente_;
 
-        numeroDeContas++;
+        ContaCorrente.numeroDeContas++;
     }
 }
 

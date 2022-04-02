@@ -15,3 +15,5 @@ console.log(contaCorrente2);
 
 console.log(contaCorrente1.clienteName + contaCorrente1.saldo);
 console.log(contaCorrente2.clienteName + contaCorrente2.saldo);
+
+console.log(ContaCorrente.numeroDeContas);
