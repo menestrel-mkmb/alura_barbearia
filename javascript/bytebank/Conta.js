@@ -6,10 +6,6 @@ export class Conta {
     _saldo = 0;
     _tipo;
 
-    // sacar(valor_){
-    //     throw new Error("Chamada direta de um método abstrato. Sobrescreva na Classe Filha.");
-    // }
-
     _sacar(valor_, taxa_){
         if(!(typeof(valor_) == "number") || valor_ <= 0) return;
         

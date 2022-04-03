@@ -1,4 +1,6 @@
 export class Cliente {
+    static numClientes = 0;
+
     nome;
     _cpf;
     _rg;
@@ -15,5 +17,7 @@ export class Cliente {
         this.nome = nome_;
         this._cpf = cpf_;
         this._rg = rg_;
+
+        Cliente.numClientes++;
     }
 }
