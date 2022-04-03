@@ -6,7 +6,8 @@ export class Diretor extends Funcionario {
     _salario = 5000;
 
     constructor(nome_, cpf_){
-        super.constructor(nome_, cpf_, _salario);
+        super(nome_, cpf_);
+        this._bonificacao = 1.2;
 
         Diretor.numDiretor++;
     }

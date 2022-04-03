@@ -4,6 +4,7 @@ export class Cliente {
     nome;
     _cpf;
     _rg;
+    _senha;
 
     get _cpf(){
         return this._cpf;
@@ -11,6 +12,10 @@ export class Cliente {
 
     get _rg(){
         return this._rg;
+    }
+
+    setSenha(valor_){
+        this._senha = valor_;
     }
 
     constructor(nome_, cpf_, rg_){

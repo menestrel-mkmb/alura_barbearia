@@ -1,4 +1,4 @@
-import { Cliente } from "./Conta/Cliente.js";
+/*import { Cliente } from "./Conta/Cliente.js";
 import { ContaCorrente } from "./Conta/ContaCorrente.js";
 import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
 
@@ -15,5 +15,18 @@ console.log(contaPoupanca1.depositar(10));
 
 console.log(contaCorrente1);
 console.log(contaCorrente2);
-console.log(contaPoupanca1);
+console.log(contaPoupanca1);*/
 
+import { Cliente } from "./Conta/Cliente.js";
+import { Gerente } from "./Funcionarios/Gerente.js";
+import { Diretor } from "./Funcionarios/Diretor.js";
+import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
+
+const diretor = new Diretor("Rodrigo", 111);
+const gerente = new Gerente("Amorim", 222);
+
+diretor.setSenha("123456");
+
+const statusLogin = SistemaAutenticacao.login(diretor, "123456");
+
+console.log(diretor._nome + ": " + statusLogin);

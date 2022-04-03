@@ -3,10 +3,11 @@ import { Funcionario } from "./Funcionario.js";
 export class Gerente extends Funcionario {
     static numGerente = 0;
 
-    _salario = 5000;
+    _salario = 4000;
 
     constructor(nome_, cpf_){
-        super.constructor(nome_, cpf_, _salario);
+        super(nome_, cpf_);
+        this._bonificacao = 1.1;
 
         Gerente.numGerente++;
     }

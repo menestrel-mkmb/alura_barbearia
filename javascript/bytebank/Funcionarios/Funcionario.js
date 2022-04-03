@@ -4,6 +4,8 @@ export class Funcionario {
     _nome;
     _cpf;
     _salario;
+    _bonificacao = 1;
+    _senha;
 
     get nome(){
         return this._nome;
@@ -21,14 +23,25 @@ export class Funcionario {
         return _salario = valor;
     }
 
-    constructor(nome_, cpf_, salario_){
+    get senha(){
+        return this._senha;
+    }
+
+    /**
+     * @param {string} valor
+     * valor: string -> ts
+     */
+    setSenha(valor){
+        this._senha = valor;
+    }
+
+    constructor(nome_, cpf_){
         if(this.constructor == Funcionario){
             throw new Error("Instância direta de um objeto de uma Classe Abstrata. Use alguma Classe filha mais específica");
         }
 
         this._nome = nome_;
         this._cpf = cpf_;
-        this._salario = salario_;
 
         Funcionario.numFuncionario++;
     }
