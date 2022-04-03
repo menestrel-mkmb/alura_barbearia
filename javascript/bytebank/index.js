@@ -14,5 +14,7 @@ console.log(contaCorrente1.depositar(200));
 console.log(contaPoupanca1.depositar(100));
 
 console.log(contaCorrente1.sacar(10));
+console.log(contaPoupanca1.sacar(10));
 
 console.log(contaCorrente1);
+console.log(contaPoupanca1);

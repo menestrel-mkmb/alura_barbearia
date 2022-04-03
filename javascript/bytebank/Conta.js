@@ -6,16 +6,9 @@ export class Conta {
     _saldo = 0;
     _tipo;
 
-    sacar(valor_){
-        if(!(typeof(valor_) == "number") || valor_ <= 0) return;
-        
-        if(this._saldo >= valor_){
-            this._saldo -= valor_;
-            return valor_;
-        } else {
-            return 0;
-        }
-    }
+    // sacar(valor_){
+    //     throw new Error("Chamada direta de um método abstrato. Sobrescreva na Classe Filha.");
+    // }
 
     _sacar(valor_, taxa_){
         if(!(typeof(valor_) == "number") || valor_ <= 0) return;
@@ -77,6 +70,12 @@ export class Conta {
     }
 
     constructor(agencia_, cliente_, saldoInicial_, tipo_){
+        if(this.constructor == Conta){
+            throw new Error("Instância direta de um objeto de uma Classe Abstrata. Use alguma Classe filha mais específica");
+        }
+
+        //TODO: typecast
+
         this._saldo = saldoInicial_;
         this._cliente = cliente_;
         this._agencia = agencia_;
