@@ -6,12 +6,23 @@ export class Conta {
     _saldo = 0;
     _tipo;
 
-    sacar(valor){
-        if(!(typeof(valor) == "number") || valor <= 0) return;
+    sacar(valor_){
+        if(!(typeof(valor_) == "number") || valor_ <= 0) return;
         
-        if(this._saldo >= valor){
-            this._saldo -= valor;
-            return valor;
+        if(this._saldo >= valor_){
+            this._saldo -= valor_;
+            return valor_;
+        } else {
+            return 0;
+        }
+    }
+
+    _sacar(valor_, taxa_){
+        if(!(typeof(valor_) == "number") || valor_ <= 0) return;
+        
+        if(this._saldo >= valor_*taxa_){
+            this._saldo -= valor_*taxa_;
+            return valor_;
         } else {
             return 0;
         }

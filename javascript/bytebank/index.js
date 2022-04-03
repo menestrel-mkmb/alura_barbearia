@@ -13,6 +13,6 @@ const contaPoupanca1 = new ContaPoupanca(1001, cliente1, 0);
 console.log(contaCorrente1.depositar(200));
 console.log(contaPoupanca1.depositar(100));
 
-console.log(contaCorrente1.transferir(50, contaPoupanca1));
+console.log(contaCorrente1.sacar(10));
 
 console.log(contaCorrente1);
