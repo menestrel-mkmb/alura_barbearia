@@ -3,10 +3,6 @@ import { Conta } from "./Conta.js";
 export class ContaCorrente extends Conta {
     static numContaCorrente = 0;
 
-    #taxaDeposito = 6;
-    #taxaSaque = 4;
-    #taxaTransferencia = 10;
-
     sacar(valor_){
         const taxa = 1.1;
         return super._sacar(valor_, taxa);
