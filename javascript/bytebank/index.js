@@ -23,10 +23,13 @@ import { Diretor } from "./Funcionarios/Diretor.js";
 import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
 
 const diretor = new Diretor("Rodrigo", 111);
-const gerente = new Gerente("Amorim", 222);
+const cliente = new Cliente("Amorim", 111222333, 111);
 
 diretor.setSenha("123456");
+cliente.setSenha("123");
 
-const statusLogin = SistemaAutenticacao.login(diretor, "123456");
+const statusLoginDiretor = SistemaAutenticacao.login(diretor, "123456");
+console.log(diretor._nome + ": " + statusLoginDiretor);
 
-console.log(diretor._nome + ": " + statusLogin);
+const statusLoginCliente = SistemaAutenticacao.login(cliente, "456");
+console.log(cliente._nome + ": " + statusLoginCliente);

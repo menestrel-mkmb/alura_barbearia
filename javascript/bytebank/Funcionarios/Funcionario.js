@@ -23,8 +23,8 @@ export class Funcionario {
         return _salario = valor;
     }
 
-    get senha(){
-        return this._senha;
+    autenticar(senha_){
+        return this._senha == senha_;
     }
 
     /**

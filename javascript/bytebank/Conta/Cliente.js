@@ -1,7 +1,7 @@
 export class Cliente {
     static numClientes = 0;
 
-    nome;
+    _nome;
     _cpf;
     _rg;
     _senha;
@@ -14,12 +14,16 @@ export class Cliente {
         return this._rg;
     }
 
+    autenticar(senha_){
+        return this._senha == senha_;
+    }
+
     setSenha(valor_){
         this._senha = valor_;
     }
 
     constructor(nome_, cpf_, rg_){
-        this.nome = nome_;
+        this._nome = nome_;
         this._cpf = cpf_;
         this._rg = rg_;
 
