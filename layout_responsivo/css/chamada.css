@@ -1,4 +1,4 @@
-.chamada  {
+.banner  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     padding-bottom: 2.5rem;
 }
 
-.chamada__titulo {
+.banner__title {
     font-family: 'Montserrat', serif;
     font-size: 2rem;
     font-weight: 700;
@@ -21,13 +21,13 @@
     margin-bottom: 1.5rem;
 }
 
-.chamada__texto {
+.banner__desc {
     font-size: 1.25rem;
     line-height: normal;
 
     margin: 0 auto 2.5rem;
 }
 
-.chamada__botao {
+.banner__link {
     width: 100%;
 }

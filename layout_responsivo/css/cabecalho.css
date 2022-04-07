@@ -1,4 +1,4 @@
-.cabecalho {
+.menu {
     color: #FFF;
 
     width: 100%;
@@ -17,15 +17,15 @@
     position: absolute;
 }
 
-.cabecalho__logo {
+.menu__logo {
     margin-bottom: 1rem;
 }
 
-.cabecalho__navegacao {
+.menu__nav {
     text-align: center;
 }
 
-.cabecalho__link {
+.menu__link {
     font-size: 1.1rem;
 
     display: inline-block;
