@@ -1,9 +1,6 @@
 .sobre__sect {
     padding-top: 3rem;
     padding-bottom: 3rem;
-}
-
-.sobre__conteudo-div {
     width: 80%;
 }
 
@@ -43,5 +40,33 @@
 }
 
 .sobre__imagem {
-    visibility: hidden;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre__sect {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+    }
+
+    .sobre__conteudo-div {
+        margin-right: 3rem;
+        width: 50%;
+    }
+
+    .sobre__title {
+        text-align: left;
+    }
+
+    .sobre__description--divisao {
+        border-bottom: 1px solid var(--cinza-medio);
+        padding-bottom: 1.5rem;
+    }
+
+    .sobre__imagem {
+        display: block;
+    }
 }

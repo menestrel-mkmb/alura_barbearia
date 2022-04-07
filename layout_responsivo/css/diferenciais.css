@@ -42,3 +42,13 @@
 .item__description {
     line-height: normal;
 }
+
+@media screen and (min-width:1024px) {
+    .diferenciais__sect {
+        background-color: var(--cinza-claro);
+    }
+
+    .diferenciais__ul {
+        justify-content: space-around;
+    }
+}
