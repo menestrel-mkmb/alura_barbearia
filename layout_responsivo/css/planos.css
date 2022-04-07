@@ -67,7 +67,7 @@
     line-height: 28px;
 }
 
-.cartao__botao {
+.cartao__button {
     font-size: 1.2rem;
     font-weight: 700;
 
@@ -93,14 +93,14 @@
     color: var(--planos-cartao-mega);
 }
 
-.cartao__botao--start {
+.cartao__button--start {
     border-color: var(--planos-cartao-start);
 }
 
-.cartao__botao--ultra {
+.cartao__button--ultra {
     border-color: var(--planos-cartao-ultra);
 }
 
-.cartao__botao--mega {
+.cartao__button--mega {
     border-color: var(--planos-cartao-mega);
 }
