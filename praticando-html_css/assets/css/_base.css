@@ -12,6 +12,10 @@ a {
   flex-wrap: wrap;
 }
 
+.nowrap {
+  flex-wrap: nowrap;
+}
+
 .border-box {
   box-sizing: border-box;
 }
@@ -33,6 +37,10 @@ a {
   text-align: center;
 }
 
+.j__center {
+  justify-content: center;
+}
+
 .contain__img {
   object-fit: contain;
 }
@@ -48,4 +56,9 @@ a {
 a:hover,
 button:hover {
   cursor: pointer;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
 }
