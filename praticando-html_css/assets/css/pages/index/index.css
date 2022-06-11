@@ -14,7 +14,35 @@
   height: 30rem;
 }
 
+.combo__img {
+  width: 50%;
+}
+
 .combo__artc .text__div {
+  position: relative;
+
+  gap: 1rem;
+
   padding: 3rem 2rem;
   width: 40%;
+}
+
+.combo__btns {
+  background: none;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  width: 60%;
+}
+
+.solid__btn {
+  background-color: white;
+  color: black;
+}
+
+.outline__btn {
+  background-color: none;
+  color: white;
 }
