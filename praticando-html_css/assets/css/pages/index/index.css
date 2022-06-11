@@ -14,47 +14,13 @@
   width: 100%;
 }
 
-.combo__artc {
-  background-image: url("../../../imgs/Background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-
-  height: 680px;
-}
-
-.bg__img {
-  object-fit: cover;
-}
-
-.combo__img {
-  width: 50%;
-  min-width: 300px;
-}
-
-.combo__artc .text__div {
-  background-image: linear-gradient(to right, #000000c0, #00000000);
-  color: white;
-  position: relative;
-
-  gap: 1rem;
-
-  padding: 5rem 2rem;
-  height: 100%;
-  width: 50%;
-}
-
-.combo__btns {
+.btn {
   background: none;
   border: 2px solid white;
   border-radius: 0.5rem;
   cursor: pointer;
 
   transition: all 500ms;
-
-  margin: 0 auto;
-  padding: 0.5rem 1rem;
-  width: 60%;
 }
 
 .solid__btn {
@@ -79,8 +45,4 @@
   background-color: #fff;
   border-color: #167bf7;
   color: #167bf7;
-}
-
-.ps__text {
-  font-size: 0.5rem;
 }

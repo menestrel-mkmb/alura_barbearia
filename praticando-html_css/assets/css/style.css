@@ -5,4 +5,7 @@
 @import url("./elements/header/_header.css");
 @import url("./elements/header/_footer.css");
 
+/* css sub-page elements */
+@import url("./elements/index/combo/_combo.css");
+
 /* font imports */
