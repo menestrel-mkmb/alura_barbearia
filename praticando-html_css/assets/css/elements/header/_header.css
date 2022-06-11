@@ -1,0 +1,23 @@
+.header__sect {
+  background-color: black;
+  color: white;
+
+  box-shadow: 0 10px 20px #fff3;
+
+  padding: 0.5rem 2rem;
+
+  height: 3rem;
+  width: calc(100% - 4rem);
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.menu {
+  gap: 1rem;
+}
+
+.menu__item {
+  padding: 0.5rem 1rem;
+}

@@ -2,5 +2,7 @@
 @import url("_base.css");
 
 /* css elements imports */
+@import url("./elements/header/_header.css");
+@import url("./elements/header/_footer.css");
 
 /* font imports */

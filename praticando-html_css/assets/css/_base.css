@@ -2,6 +2,11 @@
   --color-main: #222;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -11,10 +16,31 @@
   box-sizing: border-box;
 }
 
-.parent_row {
+.parent__row {
   flex-direction: row;
 }
 
-.parent_col {
+.parent__col {
   flex-direction: column;
+}
+
+.space__btw {
+  justify-content: space-between;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.contain__img {
+  object-fit: contain;
+}
+
+.fill__img {
+  object-fit: fill;
+}
+
+.cover__img {
+  object-fit: cover;
 }

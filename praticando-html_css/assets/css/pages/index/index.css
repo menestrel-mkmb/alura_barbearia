@@ -1,0 +1,20 @@
+.content {
+  background-color: black;
+
+  margin: 3rem 0;
+  padding: 0.5rem;
+
+  height: 1800px;
+  width: 100%;
+}
+
+.combo__artc {
+  background-image: url("../../../imgs/Background.png");
+
+  height: 30rem;
+}
+
+.combo__artc .text__div {
+  padding: 3rem 2rem;
+  width: 40%;
+}
