@@ -1,6 +1,6 @@
 .content {
-  background-color: black;
-  color: white;
+  background-color: var(--color-main-bg);
+  color: var(--color-font-white);
 
   margin: 3rem 0;
   padding: 0.5rem;
@@ -16,7 +16,7 @@
 
 .btn {
   background: none;
-  border: 2px solid white;
+  border: 2px solid var(--color-font-white);
   border-radius: 0.5rem;
   cursor: pointer;
 
@@ -24,25 +24,25 @@
 }
 
 .solid__btn {
-  border-color: #167bf7;
-  background-color: #167bf7;
-  color: white;
+  border-color: var(--color-button-blue);
+  background-color: var(--color-button-blue);
+  color: var(--color-font-white);
 
   font-weight: 700;
 }
 
 .solid__btn:hover {
-  background-color: white;
-  color: #167bf7;
+  background-color: var(--color-font-white);
+  color: var(--color-button-blue);
 }
 
 .outline__btn {
   background-color: none;
-  color: white;
+  color: var(--color-font-white);
 }
 
 .outline__btn:hover {
-  background-color: #fff;
-  border-color: #167bf7;
-  color: #167bf7;
+  background-color: var(--color-font-white);
+  border-color: var(--color-button-blue);
+  color: var(--color-button-blue);
 }

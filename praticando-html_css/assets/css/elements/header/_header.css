@@ -1,6 +1,6 @@
 .header__sect {
-  background-color: black;
-  color: white;
+  background-color: var(--color-main-bg);
+  color: var(--color-font-white);
 
   box-shadow: 0 10px 20px #fff3;
 

@@ -1,9 +1,14 @@
 :root {
-  --color-main: #222;
+  --color-main-bg: #00030c;
+
+  --color-font-white: #f9f9f9;
+  --color-font-grey: #c0c0c0;
+
+  --color-button-blue: #167bf7;
 }
 
 a {
-  color: white;
+  color: var(--color-font-white);
   text-decoration: none;
 }
 

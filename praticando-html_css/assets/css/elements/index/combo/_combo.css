@@ -14,7 +14,7 @@
 
 .combo__artc .text__div {
   background-image: linear-gradient(to right, #000000c0, #00000000);
-  color: white;
+  color: var(--color-font-white);
   position: relative;
 
   gap: 1rem;
@@ -31,5 +31,6 @@
 }
 
 .ps__text {
+  color: var(--color-font-grey);
   font-size: 0.5rem;
 }
