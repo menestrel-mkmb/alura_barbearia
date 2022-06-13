@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  padding: 0.5rem 1rem;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;

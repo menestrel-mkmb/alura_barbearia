@@ -22,7 +22,7 @@
     </header>
     <main class="main__sect content container flex parent__col">
       <article class="article combo__artc cover">
-        <div class="text__div flex parent__col center">
+        <div class="text__div border-box flex parent__col center">
           <span class="desc__span text desc__combo">
             Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um
             preço único.
@@ -45,12 +45,25 @@
         </div>
       </article>
 
-      <article class="product__art article product-desc__artc">
+      <article class="product__artc article product-desc__artc">
         <section
           class="product__sect feature-1__sect flex parent__row j__center center"
         >
-          <img src="./assets/imgs/banner.png" alt="" srcset="" />
-          <div class="text__div flex parent__col">
+          <div class="imgs__div view__imgs imgs">
+            <img
+              class="bg__imgs bg-view__img"
+              src="./assets/imgs/view_tv.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              class="front__imgs front-view__img"
+              src="./assets/imgs/view_mobile.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="text__div center flex parent__col">
             <h3 class="product__title title devices__title">
               Assista do seu jeito
             </h3>
@@ -64,7 +77,7 @@
         <section
           class="product__sect feature-2__sect flex parent__row j__center center nowrap"
         >
-          <div class="text__div flex parent__col">
+          <div class="text__div center flex parent__col">
             <span class="product__sect desc text combo__text">
               Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter
               acesso a cursos de diversas áreas da tecnologia e aprender inglês
@@ -74,16 +87,16 @@
               Assine o Combo+
             </button>
           </div>
-          <div class="combo__imgs imgs">
+          <div class="imgs__div combo__imgs imgs">
             <img
               src="./assets/imgs/home_alura.png"
               alt=""
-              class="img alura__img"
+              class="img alura__img bg__imgs"
             />
             <img
               src="./assets/imgs/home_lingua.png"
               alt=""
-              class="img linguas__img"
+              class="img linguas__img front__imgs"
             />
           </div>
         </section>
@@ -93,9 +106,9 @@
           <img
             src="./assets/imgs/course_example.png"
             alt=""
-            class="img download__img"
+            class="img download__img imgs"
           />
-          <div class="text__div flex parent__col">
+          <div class="text__div center flex parent__col">
             <h3 class="product__title title download__title">
               Baixe seus cursos
             </h3>

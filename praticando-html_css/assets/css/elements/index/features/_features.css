@@ -1,0 +1,46 @@
+.product__artc {
+  gap: 2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.product__artc div {
+  width: 40%;
+}
+
+.text__div * {
+  margin: 1rem 0;
+  width: 60%;
+
+  z-index: 2;
+}
+
+.imgs__div {
+  position: relative;
+  left: center;
+  top: center;
+}
+
+.bg__imgs {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.front__imgs {
+  position: absolute;
+}
+
+.front-view__img {
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.product__btn {
+  width: 40%;
+}
+
+.linguas__img {
+  top: 2rem;
+  left: 4rem;
+}

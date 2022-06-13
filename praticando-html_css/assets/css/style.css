@@ -7,5 +7,6 @@
 
 /* css sub-page elements */
 @import url("./elements/index/combo/_combo.css");
+@import url("./elements/index/features/_features.css");
 
 /* font imports */

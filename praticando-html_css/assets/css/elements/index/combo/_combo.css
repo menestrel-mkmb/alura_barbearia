@@ -1,10 +1,13 @@
 .combo__artc {
-  background-image: url("../../../../imgs/Background.png");
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url("../../../../imgs/Background.png");
   background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   height: 680px;
+
+  position: relative;
 }
 
 .combo__img {
@@ -19,14 +22,13 @@
 
   gap: 1rem;
 
-  padding: 12rem 2rem;
+  padding: 2rem;
   height: 100%;
   width: 50%;
 }
 
 .combo__btns {
   margin: 0 auto;
-  padding: 0.5rem 1rem;
   width: 60%;
 }
 
