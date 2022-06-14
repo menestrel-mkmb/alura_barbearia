@@ -1,0 +1,30 @@
+.footer__sect {
+  background-color: var(--color-main-bg);
+  color: var(--color-font-white);
+
+  box-shadow: 0 -10px 20px #fff3;
+
+  padding: 0.5rem 2rem;
+
+  bottom: -1;
+}
+
+.footer__logo {
+  margin: 1rem;
+}
+
+.links__div {
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.footer__span {
+  color: var(--color-font-grey);
+  font-size: 0.8rem;
+
+  margin: 0.5rem;
+}
+
+.copyright__text {
+  font-size: 0.9rem;
+}
