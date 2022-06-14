@@ -12,8 +12,11 @@
   display: block;
 
   position: relative;
-  padding: 0.5rem 2rem;
   width: 100%;
+}
+
+section {
+  margin: 2rem 0;
 }
 
 .btn {

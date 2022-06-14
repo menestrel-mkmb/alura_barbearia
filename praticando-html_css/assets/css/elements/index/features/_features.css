@@ -4,27 +4,26 @@
   width: 100%;
 }
 
-.product__artc div {
+.product__sect div {
   width: 40%;
 }
 
-.text__div * {
+.text__div:not(.combo__text) {
   margin: 1rem 0;
-  width: 60%;
 
   z-index: 2;
 }
 
 .imgs__div {
   position: relative;
-  left: center;
-  top: center;
+  left: 0;
+  top: 0;
 }
 
 .bg__imgs {
   position: relative;
-  top: 0;
   left: 0;
+  top: 0;
 }
 
 .front__imgs {
@@ -37,6 +36,7 @@
 }
 
 .product__btn {
+  margin: 1rem 0;
   width: 40%;
 }
 

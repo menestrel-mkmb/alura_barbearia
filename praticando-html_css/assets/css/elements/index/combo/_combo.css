@@ -6,6 +6,7 @@
   background-size: contain;
 
   height: 680px;
+  min-width: 300px;
 
   position: relative;
 }
@@ -28,7 +29,7 @@
 }
 
 .combo__btns {
-  margin: 0 auto;
+  margin: 0.5 auto;
   width: 60%;
 }
 
