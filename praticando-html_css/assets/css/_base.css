@@ -5,6 +5,15 @@
   --color-font-grey: #c0c0c0;
 
   --color-button-blue: #167bf7;
+
+  --font-main-text: "Inter";
+  --font-text-weight: 400;
+  --font-title-weight: 700;
+}
+
+body main.content {
+  font-family: var(--font-main-text);
+  font-weight: var(--font-text-weight);
 }
 
 a {
@@ -73,5 +82,5 @@ button:hover {
 
 .title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: var(--font-title-weight);
 }

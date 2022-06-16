@@ -1,3 +1,6 @@
+/* font imports */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 /* css imports */
 @import url("_base.css");
 
@@ -8,5 +11,3 @@
 /* css sub-page elements */
 @import url("./elements/index/combo/_combo.css");
 @import url("./elements/index/features/_features.css");
-
-/* font imports */
