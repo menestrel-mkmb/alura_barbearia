@@ -53,6 +53,20 @@ section {
 }
 
 @media screen and (max-width: 868px) {
+  .btn {
+    margin: 0 auto;
+    width: unset;
+  }
+
+  .product__sect {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .product__text {
+    gap: 1rem;
+  }
+
   .imgs {
     display: none;
   }

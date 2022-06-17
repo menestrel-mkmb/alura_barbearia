@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.subtitle {
+  font-size: 2rem;
+}
+
 .combo__img {
   width: 50%;
   min-width: 300px;
