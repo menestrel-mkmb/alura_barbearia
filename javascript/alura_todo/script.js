@@ -13,34 +13,51 @@
     listInput = document.querySelector(".form-input").value;
   };
 
+  const createTaskNode = (index) => {
+    const node = document.createElement("li");
+    const taskNumberString = `task-${index}`;
+    node.setAttribute("data-task", `task-${index}`);
+    node.classList.add("task", taskNumberString);
+
+    return node;
+  };
+
+  const createTaskText = (element, index) => {
+    const taskText = document.createElement("p");
+    taskText.setAttribute("data-txt", `task-${index}`);
+    taskText.innerText = element;
+    return taskText;
+  };
+
+  const createCheckBtn = (index) => {
+    const checkBtn = document.createElement("button");
+    checkBtn.textContent = "Concluir";
+    checkBtn.classList.add("check-button");
+    checkBtn.setAttribute("data-btn", `task-${index}`);
+    checkBtn.addEventListener("click", checkTask);
+
+    return checkBtn;
+  };
+
+  const createRemoveBtn = (index) => {
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remover";
+    removeBtn.classList.add("delete-button");
+    removeBtn.setAttribute("data-btn", `task-${index}`);
+    removeBtn.addEventListener("click", removeFromList);
+
+    return removeBtn;
+  };
+
   const appendOnList = () => {
     listObject.forEach((element, index) => {
       //criando elementos
-      const node = document.createElement("li");
-      const taskNumberString = `task-${index}`;
-      node.setAttribute("data-task", `task-${index}`);
-      node.classList.add("task", taskNumberString);
-
-      const taskText = document.createElement("p");
-      taskText.setAttribute("data-txt", `task-${index}`);
-      taskText.innerText = element;
-
-      const checkBtn = document.createElement("button");
-      checkBtn.textContent = "Concluir";
-      checkBtn.classList.add("check-button");
-      checkBtn.setAttribute("data-btn", `task-${index}`);
-      checkBtn.addEventListener("click", checkTask);
-
-      const removeBtn = document.createElement("button");
-      removeBtn.textContent = "Remover";
-      removeBtn.classList.add("delete-button");
-      removeBtn.setAttribute("data-btn", `task-${index}`);
-      removeBtn.addEventListener("click", removeFromList);
+      const node = createTaskNode(index);
 
       //juntando elementos
-      node.appendChild(taskText);
-      node.appendChild(checkBtn);
-      node.appendChild(removeBtn);
+      node.appendChild(createTaskText(element, index));
+      node.appendChild(createCheckBtn(index));
+      node.appendChild(createRemoveBtn(index));
 
       list.appendChild(node);
     });
@@ -83,4 +100,5 @@
   };
 
   addBtn.addEventListener("click", insertOnList);
+  appendOnList();
 })();
