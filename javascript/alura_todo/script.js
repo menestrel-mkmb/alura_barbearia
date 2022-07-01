@@ -1,6 +1,6 @@
 let list = document.querySelector(".list");
 let listInput = document.querySelector(".form-input").value;
-
+const addBtn = document.querySelector(".add__btn");
 let listObject = [];
 
 const clearListnInput = () => {
@@ -17,14 +17,15 @@ const appendOnList = () => {
     //criando elementos
     const node = document.createElement("li");
     const taskNumberString = `task-${index}`;
+    node.setAttribute("data-task", `task-${index}`);
     node.classList.add("task", taskNumberString);
 
     const taskText = document.createElement("p");
-    taskText.setAttribute("data-task", `task-${index}`);
+    taskText.setAttribute("data-txt", `task-${index}`);
     taskText.innerText = element;
 
     const checkBtn = document.createElement("button");
-    checkBtn.textContent = "OK";
+    checkBtn.textContent = "Concluir";
     checkBtn.classList.add("check-button");
     checkBtn.setAttribute("data-btn", `task-${index}`);
     checkBtn.addEventListener("click", checkTask);
@@ -55,12 +56,16 @@ const insertOnList = (event) => {
 };
 
 const removeFromList = (event) => {
-  //logic to remove
-  const taskRegex = RegExp(/task-\d*/g);
+  event.preventDefault();
 
-  const taskToDelete = document.querySelector(``).value;
-  listObject.filter((value) => {
-    return value !== taskToDelete;
+  //logic to remove
+  const btn = event.target;
+  const taskIndex = btn.dataset.btn;
+  const task = document.querySelector(`[data-task="${taskIndex}"]`);
+  const text = task.innerText;
+
+  listObject.filter(() => {
+    return task != text;
   });
 
   clearListnInput();
@@ -70,7 +75,9 @@ const removeFromList = (event) => {
 const checkTask = (event) => {
   const btn = event.target;
   const taskIndex = btn.dataset.btn;
-  const task = document.querySelector(`[data-task="${taskIndex}"]`);
+  const task = document.querySelector(`[data-txt="${taskIndex}"]`);
 
-  task.style.setProperty("text-decoration", "line-through");
+  task.classList.toggle("done");
 };
+
+addBtn.addEventListener("click", insertOnList);
