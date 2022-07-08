@@ -5,7 +5,12 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 
+  &::before {
+    content: url("../img/Menu.svg");
+  }
+
   &__li {
+    list-style-type: none;
     padding: 1rem 1rem;
 
     -webkit-transition: background-image $transition-menu-duration ease-in-out;
@@ -27,6 +32,16 @@
 
     &hover .categories > .sub-menu {
       display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & {
+      order: unset;
+
+      &::before {
+        display: none;
+      }
     }
   }
 }

@@ -12,20 +12,42 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
 }
-.header__sect .logo__link,
-.header__sect .sub-menu__ul {
+.header__sect .logo__link span,
+.header__sect .menu span,
+.header__sect .sub-menu__ul li,
+.header__sect .panel span {
+  display: none;
+}
+.header__sect .logo__link {
+  margin-left: 1rem;
+  margin-right: auto;
+}
+.header__sect .menu__nav {
+  order: -1;
+  padding-left: 0;
+}
+.header__sect .menu__nav .menu__ul .menu__li {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
+  .header__sect {
+    padding: 1rem 4rem;
+  }
+  .header__sect .logo__link span,
+.header__sect .menu span,
+.header__sect .sub-menu__ul {
+    display: unset;
+  }
   .header__sect .logo__link {
     font-size: 1.5rem;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    margin-right: unset;
     margin: 0 1rem;
   }
   .header__sect .logo__link span {
@@ -40,7 +62,11 @@ html {
     color: unset;
   }
   .header__sect .menu__nav {
+    order: unset;
     margin-right: auto;
+  }
+  .header__sect .menu__nav .menu__ul .menu__li {
+    display: unset;
   }
   .header__sect .sub-menu__ul {
     display: none;
@@ -49,13 +75,22 @@ html {
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__sect .panel a span {
+    display: unset;
+  }
+}
 .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+.menu::before {
+  content: url("../img/Menu.svg");
+}
 .menu__li {
+  list-style-type: none;
   padding: 1rem 1rem;
   transition: background-image 200ms ease-in-out color 200ms ease-in-out;
 }
@@ -65,4 +100,45 @@ html {
 }
 .menu__lihover .categories > .sub-menu {
   display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    order: unset;
+  }
+  .menu::before {
+    display: none;
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.panel__link {
+  color: unset;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: 51px;
+  width: 51px;
+}
+.panel__link::before {
+  margin: auto;
+}
+.panel .link-0::before {
+  content: url("../img/Favoritos.svg");
+}
+.panel .link-1::before {
+  content: url("../img/Sacola.png");
+}
+.panel .link-2::before {
+  content: url("../img/Usuario.png");
+}
+@media screen and (min-width: 1024px) {
+  .panel .link-0 {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
