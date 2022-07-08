@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 html {
   font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.header__sect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+.header__sect .logo__link,
+.header__sect .sub-menu__ul {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__sect .logo__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0 1rem;
+  }
+  .header__sect .logo__link span {
+    display: flex;
+    align-items: flex-end;
+  }
+  .header__sect .logo__link span strong {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .header__sect .logo__link:visited {
+    color: unset;
+  }
+  .header__sect .menu__nav {
+    margin-right: auto;
+  }
+  .header__sect .sub-menu__ul {
+    display: none;
+  }
+  .header__sect .sub-menu__ul:hover, .header__sect .sub-menu__ul:active, .header__sect .sub-menu__ul:focus {
+    display: flex;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.menu__li {
+  padding: 1rem 1rem;
+  transition: background-image 200ms ease-in-out color 200ms ease-in-out;
+}
+.menu__li:hover, .menu__li:active, .menu__li:focus {
+  background-image: linear-gradient(to right, #002f52, #326589);
+  color: white;
+}
+.menu__lihover .categories > .sub-menu {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

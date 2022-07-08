@@ -1,0 +1,32 @@
+@import "../../variables";
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  &__li {
+    padding: 1rem 1rem;
+
+    -webkit-transition: background-image $transition-menu-duration ease-in-out;
+    -moz-transition: background-image $transition-menu-duration ease-in-out;
+    -o-transition: background-image $transition-menu-duration ease-in-out;
+    transition: background-image $transition-menu-duration ease-in-out color
+      $transition-menu-duration ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: linear-gradient(
+        to right,
+        $color-dark-blue,
+        $color-medium-blue
+      );
+      color: white;
+    }
+
+    &hover .categories > .sub-menu {
+      display: flex;
+    }
+  }
+}
