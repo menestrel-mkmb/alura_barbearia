@@ -1,4 +1,6 @@
 .header__sect {
+  background-color: $color-white-pure;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,7 +10,6 @@
 
   .logo__link span,
   .menu span,
-  .sub-menu__ul li,
   .panel span {
     display: none;
   }

@@ -13,25 +13,17 @@
     list-style-type: none;
     padding: 1rem 1rem;
 
-    -webkit-transition: background-image $transition-menu-duration ease-in-out;
-    -moz-transition: background-image $transition-menu-duration ease-in-out;
-    -o-transition: background-image $transition-menu-duration ease-in-out;
-    transition: background-image $transition-menu-duration ease-in-out color
-      $transition-menu-duration ease-in-out;
+    cursor: pointer;
 
     &:hover,
     &:active,
     &:focus {
       background-image: linear-gradient(
         to right,
-        $color-dark-blue,
-        $color-medium-blue
+        $color-blue-dark,
+        $color-blue-medium
       );
-      color: white;
-    }
-
-    &hover .categories > .sub-menu {
-      display: flex;
+      color: $color-white-pure;
     }
   }
 

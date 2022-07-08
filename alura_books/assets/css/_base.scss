@@ -5,6 +5,18 @@ html {
   font-family: $font-poppins;
 }
 
+body {
+  background-color: $color-grey-light;
+}
+
 .hidden {
   display: none;
+}
+
+.show-sub-menu {
+  display: unset;
+}
+
+.sub-title {
+  color: $color-yellow-dark;
 }

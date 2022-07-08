@@ -1,0 +1,29 @@
+.menu__nav {
+  position: relative;
+  .sub-menu {
+    background-color: $color-white-pure;
+
+    position: absolute;
+    top: 4rem;
+
+    .sub-title {
+      padding: 0.5rem;
+    }
+
+    .sub-item {
+      color: $color-blue-dark;
+      text-transform: uppercase;
+
+      padding: 1rem;
+
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          $color-blue-dark,
+          $color-blue-medium
+        );
+        color: $color-white-pure;
+      }
+    }
+  }
+}
