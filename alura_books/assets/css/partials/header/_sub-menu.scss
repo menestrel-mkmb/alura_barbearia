@@ -2,16 +2,20 @@
   position: relative;
   .sub-menu {
     background-color: $color-white-pure;
+    list-style-type: none;
+
+    padding-left: 0;
 
     position: absolute;
-    top: 4rem;
+    top: 100%;
 
     .sub-title {
       padding: 0.5rem;
     }
 
     .sub-item {
-      color: $color-blue-dark;
+      color: $color-gradient-blue;
+
       text-transform: uppercase;
 
       padding: 1rem;

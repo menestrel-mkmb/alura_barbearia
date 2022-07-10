@@ -2,11 +2,24 @@
 .menu {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.5rem;
+  padding-left: 0;
+
+  max-width: 200px;
 
   &::before {
     content: url("../img/Menu.svg");
+  }
+
+  .categories {
+    height: 100%;
+    width: 100%;
+
+    &__span {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   &__li {

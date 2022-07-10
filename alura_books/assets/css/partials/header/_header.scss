@@ -40,6 +40,10 @@
     .menu span,
     .sub-menu__ul {
       display: unset;
+
+      .hidden {
+        display: none;
+      }
     }
 
     .logo__link {
@@ -80,13 +84,19 @@
       }
     }
 
-    .sub-menu__ul {
+    .hidden {
       display: none;
+    }
+
+    .sub-menu__ul {
+      list-style-type: none;
+
+      padding-left: 0;
 
       &:hover,
       &:active,
       &:focus {
-        display: flex;
+        display: unset;
       }
     }
   }

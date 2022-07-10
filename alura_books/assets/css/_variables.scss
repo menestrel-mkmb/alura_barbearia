@@ -10,5 +10,11 @@ $color-grey-medium: #c4c4c4;
 $color-yellow-dark: #eb9b00;
 $color-white-pure: #ffffff;
 
+$color-gradient-blue: linear-gradient(
+  97.54deg,
+  #002f52 35.49%,
+  #326589 165.37%
+);
+
 //transitions
 $transition-menu-duration: 200ms;
