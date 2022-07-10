@@ -22,7 +22,7 @@
   .btn {
     background: transparent;
     border: 1px solid $color-white-pure;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     color: $color-white-pure;
 
     display: flex;
@@ -36,6 +36,16 @@
 
     &::before {
       content: url("../img/Pesquisa.svg");
+
+      &:hover {
+        content: url("../img/Pesquisa2.svg");
+      }
+    }
+
+    &:hover {
+      background: $color-white-pure;
+      border-color: $color-gradient-blue;
+      color: $color-blue-dark;
     }
   }
 }

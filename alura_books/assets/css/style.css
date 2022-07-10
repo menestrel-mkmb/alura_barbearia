@@ -207,7 +207,7 @@ body {
 .banner .btn {
   background: transparent;
   border: 1px solid #ffffff;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   color: #ffffff;
   display: flex;
   align-items: flex-start;
@@ -221,4 +221,12 @@ body {
 }
 .banner .btn::before {
   content: url("../img/Pesquisa.svg");
+}
+.banner .btn::before:hover {
+  content: url("../img/Pesquisa2.svg");
+}
+.banner .btn:hover {
+  background: #ffffff;
+  border-color: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  color: #002f52;
 }/*# sourceMappingURL=style.css.map */
