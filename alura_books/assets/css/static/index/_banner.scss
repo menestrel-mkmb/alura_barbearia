@@ -1,0 +1,41 @@
+@import "../../variables";
+.banner {
+  background: $color-gradient-blue;
+  color: $color-white-pure;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem 0.5rem;
+
+  .title {
+    font-weight: 700;
+  }
+
+  .sub-title {
+    color: $color-white-pure;
+  }
+
+  .btn {
+    background: transparent;
+    border: 1px solid $color-white-pure;
+    border-radius: 0.5rem;
+    color: $color-white-pure;
+
+    display: flex;
+    align-items: flex-start;
+
+    margin: auto;
+    padding: 0 2rem;
+    padding-top: 0.75rem;
+    min-height: 46px;
+    width: fit-content;
+
+    &::before {
+      content: url("../img/Pesquisa.svg");
+    }
+  }
+}
