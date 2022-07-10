@@ -21,11 +21,10 @@
       padding: 1rem;
 
       &:hover {
-        background-image: linear-gradient(
-          to right,
-          $color-blue-dark,
-          $color-blue-medium
-        );
+        background: $color-gradient-blue;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
         color: $color-white-pure;
       }
     }

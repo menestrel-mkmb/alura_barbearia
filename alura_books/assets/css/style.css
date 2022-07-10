@@ -107,18 +107,9 @@ body {
   flex-wrap: nowrap;
   gap: 0.5rem;
   padding-left: 0;
-  max-width: 200px;
 }
 .menu::before {
   content: url("../img/Menu.svg");
-}
-.menu .categories {
-  height: 100%;
-  width: 100%;
-}
-.menu .categories__span {
-  height: 100%;
-  width: 100%;
 }
 .menu__li {
   list-style-type: none;
@@ -128,6 +119,9 @@ body {
 .menu__li:hover, .menu__li:active, .menu__li:focus {
   background-image: linear-gradient(to right, #002f52, #326589);
   color: #ffffff;
+}
+.menu .categories span {
+  pointer-events: none;
 }
 @media screen and (min-width: 1024px) {
   .menu {
@@ -157,7 +151,7 @@ body {
   padding: 1rem;
 }
 .menu__nav .sub-menu .sub-item:hover {
-  background-image: linear-gradient(to right, #002f52, #326589);
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   color: #ffffff;
 }
 

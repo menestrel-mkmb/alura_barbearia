@@ -1,5 +1,5 @@
 const hamburguerMenu = document.querySelector(".menu__ul");
-const categoriesSpan = document.querySelector(".categories__span");
+const categoriesMenu = document.querySelector(".categories");
 
 let openHamburguerMenu = (event) => {
   event.preventDefault();
@@ -24,9 +24,9 @@ window.onresize = function () {
 let changeEvents = () => {
   if (window.innerWidth < 1024) {
     hamburguerMenu.addEventListener("click", openHamburguerMenu);
-    categoriesSpan.removeEventListener("click", openHamburguerMenu);
+    categoriesMenu.removeEventListener("click", openHamburguerMenu);
   } else {
-    categoriesSpan.addEventListener("click", openHamburguerMenu);
+    categoriesMenu.addEventListener("click", openHamburguerMenu);
     hamburguerMenu.removeEventListener("click", openHamburguerMenu);
   }
 };
