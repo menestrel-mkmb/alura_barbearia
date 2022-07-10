@@ -17,11 +17,12 @@ let openCategories = (event) => {
 };
 
 window.onresize = function () {
-  event.preventDefault();
+  console.log(window.innerWidth);
+  changeEvents();
+};
 
-  console.log(event.target);
-
-  if (event.target < 1024) {
+let changeEvents = () => {
+  if (window.innerWidth < 1024) {
     hamburguerMenu.addEventListener("click", openHamburguerMenu);
     categoriesSpan.removeEventListener("click", openHamburguerMenu);
   } else {
@@ -29,3 +30,4 @@ window.onresize = function () {
     hamburguerMenu.removeEventListener("click", openHamburguerMenu);
   }
 };
+changeEvents();
