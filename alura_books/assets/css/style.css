@@ -204,29 +204,26 @@ body {
 .banner .sub-title {
   color: #ffffff;
 }
-.banner .btn {
-  background: transparent;
+.banner .inp {
+  background: url("../img/Pesquisa.svg") no-repeat left;
+  background-position: 1rem;
   border: 1px solid #ffffff;
   border-radius: 2rem;
   color: #ffffff;
+  letter-spacing: 0.06ex;
   display: flex;
   align-items: flex-start;
   margin: auto;
-  padding: 0 2rem;
-  padding-top: 0.75rem;
+  padding: 0 2.5rem;
   min-height: 46px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: calc(100% - 5rem);
 }
-.banner .btn::before {
+.banner .inp::before {
   content: url("../img/Pesquisa.svg");
 }
-.banner .btn::before:hover {
+.banner .inp::before:hover {
   content: url("../img/Pesquisa2.svg");
 }
-.banner .btn:hover {
-  background: #ffffff;
-  border-color: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-  color: #002f52;
+.banner .inp:hover {
+  background-color: rgba(255, 255, 255, 0.1333333333);
 }/*# sourceMappingURL=style.css.map */
