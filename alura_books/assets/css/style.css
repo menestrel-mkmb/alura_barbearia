@@ -226,4 +226,17 @@ body {
 }
 .banner .inp:hover {
   background-color: rgba(255, 255, 255, 0.1333333333);
+}
+
+.carroussel__artc {
+  background-color: #ebecee;
+}
+.carroussel__artc .title {
+  background-color: #ffffff;
+  color: #eb9b00;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 0 0.5rem 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@import "../../variables";
+
+.carroussel__artc {
+  background-color: $color-grey-light;
+  .title {
+    background-color: $color-white-pure;
+    color: $color-yellow-dark;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0 0.5rem 0;
+  }
+}
