@@ -11,4 +11,20 @@
     text-transform: uppercase;
     padding: 2rem 0 0.5rem 0;
   }
+
+  .carroussel__sect {
+    .swiper {
+      .swiper-pagination {
+        position: initial;
+      }
+
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 100%;
+          height: 100%;
+          margin: 0.2rem 0;
+        }
+      }
+    }
+  }
 }
