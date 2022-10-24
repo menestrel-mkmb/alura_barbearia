@@ -2,6 +2,14 @@
 
 .carroussel__artc {
   background-color: $color-grey-light;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+
+  padding-bottom: 1rem;
+
   .title {
     background-color: $color-white-pure;
     color: $color-yellow-dark;
@@ -10,9 +18,12 @@
     text-align: center;
     text-transform: uppercase;
     padding: 2rem 0 0.5rem 0;
+    width: 100%;
   }
 
   .carroussel__sect {
+    min-width: 40%;
+    max-width: 60%;
     .swiper {
       .swiper-pagination {
         position: initial;

@@ -230,6 +230,11 @@ body {
 
 .carroussel__artc {
   background-color: #ebecee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 .carroussel__artc .title {
   background-color: #ffffff;
@@ -239,6 +244,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 2rem 0 0.5rem 0;
+  width: 100%;
+}
+.carroussel__artc .carroussel__sect {
+  min-width: 40%;
+  max-width: 60%;
 }
 .carroussel__artc .carroussel__sect .swiper .swiper-pagination {
   position: initial;
@@ -256,12 +266,13 @@ body {
 .suggested-card__sect {
   background-color: #ffffff;
   border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 2rem 1rem;
   min-width: 300px;
   max-width: 400px;
 }
@@ -286,4 +297,8 @@ body {
   padding: 1rem 0.5rem;
   width: 40%;
   margin: 0 5%;
+}
+
+.author-card__sect .card__text .stars__img {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
