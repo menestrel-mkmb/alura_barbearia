@@ -118,12 +118,63 @@
                   class="img book__img"
                 />
               </div>
+              <div class="swiper-slide book book-5">
+                <img
+                  src="./assets/img/Liderança.svg"
+                  alt="Livro sobre Liderança"
+                  srcset=""
+                  class="img book__img"
+                />
+              </div>
+              <div class="swiper-slide book book-6">
+                <img
+                  src="./assets/img/Javascript.svg"
+                  alt="Livro sobre Javascript"
+                  srcset=""
+                  class="img book__img"
+                />
+              </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
             <div class="swiper-scrollbar"></div>
           </div>
+          <section class="suggested-card__sect sect">
+            <div class="card__text">
+              <img
+                src="./assets/img/Estrelinhas.png"
+                alt="5/5"
+                class="stars__img img"
+              />
+              <h3 class="card__title title">
+                Talvez você também se interesse por
+              </h3>
+              <h4 class="card__sub-title sub-title">Anglar 11 e Firebase</h4>
+              <p class="card__desc text desc">
+                Construindo uma aplicação integrada com a plataforma do Gooogle
+              </p>
+            </div>
+            <figure class="card__figure fig">
+              <img
+                src="./assets/img/Angular.png"
+                alt="Logotipo do Angular"
+                class="card__img img"
+              />
+            </figure>
+            <div class="card__icons icons">
+              <img
+                src="./assets/img/Favoritos.svg"
+                alt="Adicionar aos favoritos"
+                class="img icon icon-1"
+              /><img
+                src="./assets/img/Compras.svg"
+                alt="Comprar agora"
+                class="img icon icon-2"
+              />
+            </div>
+            <button class="read-more__btn btn solid-btn">Saiba mais</button>
+          </section>
         </section>
       </article>
     </main>
@@ -143,11 +194,6 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
         },
       });
     </script>

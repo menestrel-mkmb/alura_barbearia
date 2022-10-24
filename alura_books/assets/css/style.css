@@ -242,9 +242,13 @@ body {
 }
 .carroussel__artc .carroussel__sect .swiper .swiper-pagination {
   position: initial;
+  margin: 1rem;
 }
-.carroussel__artc .carroussel__sect .swiper .swiper-wrapper .swiper-slide {
+.carroussel__artc .carroussel__sect .swiper-wrapper-slide {
   width: 100%;
   height: 100%;
   margin: 0.2rem 0;
+}
+.carroussel__artc .carroussel__sect .swiper-button-prev, .carroussel__artc .carroussel__sect .swiper-button-next {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
