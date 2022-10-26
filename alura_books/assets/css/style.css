@@ -301,4 +301,29 @@ body {
 
 .author-card__sect .card__text .stars__img {
   display: block;
+}
+
+.recent-topic {
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  color: #ffffff;
+  text-align: center;
+}
+.recent-topic__title {
+  font-weight: 300;
+}
+.recent-topic__topics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  width: 50%;
+}
+.recent-topic__topics .topic {
+  background-color: #eb9b00;
+  font-weight: 700;
+  padding: 1rem 2rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.recent-topic {
+  background: $color-gradient-blue;
+  color: $color-white-pure;
+  text-align: center;
+
+  &__title {
+    font-weight: 300;
+  }
+
+  &__topics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+
+    width: 50%;
+
+    .topic {
+      background-color: $color-yellow-dark;
+
+      font-weight: 700;
+
+      padding: 1rem 2rem;
+    }
+  }
+}
