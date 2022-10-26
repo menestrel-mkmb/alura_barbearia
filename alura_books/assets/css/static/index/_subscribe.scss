@@ -1,0 +1,54 @@
+@import "../../variables";
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+
+  border: 1px $color-blue-dark solid;
+  color: $color-blue-dark;
+  text-align: left;
+
+  margin: 0 auto;
+  padding: 3rem 25%;
+
+  &__texts {
+    width: 30%;
+  }
+
+  &__title {
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+  }
+
+  &__inp {
+    appearance: textfield;
+
+    background: url("../img/Email.svg") no-repeat left;
+    background-position: 1rem;
+    background-color: transparent;
+    color: $color-blue-dark;
+    opacity: 1;
+
+    font-weight: 700;
+
+    border: 1px solid $color-blue-dark;
+    border-radius: 1rem;
+
+    padding: 0.25rem 3rem;
+
+    height: fit-content;
+    width: 20%;
+
+    &::placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      color: $color-blue-dark;
+      opacity: 1;
+    }
+  }
+}

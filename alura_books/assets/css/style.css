@@ -307,8 +307,10 @@ body {
   background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   color: #ffffff;
   text-align: center;
+  padding: 2rem 30%;
 }
 .recent-topic__title {
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .recent-topic__topics {
@@ -320,10 +322,57 @@ body {
   gap: 1rem;
   margin: 0 auto;
   padding: 1rem 0.5rem;
-  width: 50%;
 }
 .recent-topic__topics .topic {
   background-color: #eb9b00;
   font-weight: 700;
   padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  border: 1px #002f52 solid;
+  color: #002f52;
+  text-align: left;
+  margin: 0 auto;
+  padding: 3rem 25%;
+}
+.subscribe__texts {
+  width: 30%;
+}
+.subscribe__title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.subscribe__inp {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  background: url("../img/Email.svg") no-repeat left;
+  background-position: 1rem;
+  background-color: transparent;
+  color: #002f52;
+  opacity: 1;
+  font-weight: 700;
+  border: 1px solid #002f52;
+  border-radius: 1rem;
+  padding: 0.25rem 3rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20%;
+}
+.subscribe__inp:-ms-input-placeholder {
+  color: #002f52;
+  opacity: 1;
+}
+.subscribe__inp::placeholder, .subscribe__inp:-ms-input-placeholder, .subscribe__inp::-ms-input-placeholder {
+  color: #002f52;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
