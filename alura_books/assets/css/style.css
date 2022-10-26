@@ -315,7 +315,7 @@ body {
 }
 .recent-topic__topics {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -326,8 +326,25 @@ body {
 .recent-topic__topics .topic {
   background-color: #eb9b00;
   font-weight: 700;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .recent-topic {
+    padding: 1rem 10%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .recent-topic {
+    padding: 0.5rem;
+  }
+  .recent-topic__title {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  .recent-topic__topics {
+    padding: 0.5rem 0;
+  }
 }
 
 .subscribe {
@@ -348,6 +365,7 @@ body {
 }
 .subscribe__title {
   font-weight: 700;
+  line-height: 150%;
   margin-bottom: 2rem;
 }
 .subscribe__inp {
