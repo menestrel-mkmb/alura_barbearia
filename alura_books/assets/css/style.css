@@ -190,12 +190,38 @@ body {
 
 .footer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 0.5rem;
   padding: 1rem 0.5rem;
 }
 .footer :nth-child(n+2) {
   display: none;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .footer :nth-child(n) {
+    display: initial;
+  }
+  .footer__title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .footer li h4 {
+    line-height: 300%;
+    text-transform: uppercase;
+  }
+  .footer .footer__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .banner {

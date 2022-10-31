@@ -1,11 +1,40 @@
 .footer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  gap: 1rem;
 
   margin-bottom: 0.5rem;
   padding: 1rem 0.5rem;
 
   :nth-child(n + 2) {
     display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    :nth-child(n) {
+      display: initial;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    li h4 {
+      line-height: 300%;
+      text-transform: uppercase;
+    }
+
+    .footer__ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
 }
