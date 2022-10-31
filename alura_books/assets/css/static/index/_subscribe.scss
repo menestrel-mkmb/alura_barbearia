@@ -49,6 +49,7 @@
     &:-ms-input-placeholder,
     &::-ms-input-placeholder {
       color: $color-blue-dark;
+      font-family: $font-poppins;
       opacity: 1;
     }
   }

@@ -388,10 +388,12 @@ body {
 }
 .subscribe__inp:-ms-input-placeholder {
   color: #002f52;
+  font-family: "Poppins", sans-serif;
   opacity: 1;
 }
 .subscribe__inp::placeholder, .subscribe__inp:-ms-input-placeholder, .subscribe__inp::-ms-input-placeholder {
   color: #002f52;
+  font-family: "Poppins", sans-serif;
   opacity: 1;
 }
 @media screen and (max-width: 1024px) {
