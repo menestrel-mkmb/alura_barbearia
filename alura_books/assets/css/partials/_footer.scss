@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 0.5rem;
+  padding: 1rem 0.5rem;
+
+  :nth-child(n + 2) {
+    display: none;
+  }
+}
