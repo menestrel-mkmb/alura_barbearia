@@ -33,7 +33,7 @@
     margin: auto;
     padding: 0 2.5rem;
     min-height: 46px;
-    width: calc(100% - 5rem);
+    width: 80%;
 
     &::before {
       content: url("../img/Pesquisa.svg");
@@ -45,6 +45,20 @@
 
     &:hover {
       background-color: #fff2;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .inp {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .inp {
+      width: 80%;
+      padding: 0;
+      padding-left: 2.5rem;
     }
   }
 }

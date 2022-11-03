@@ -12,7 +12,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 600px) {
     padding: 1rem 2rem;
     font-size: 0.8rem;
     font-weight: 300;
@@ -35,6 +35,78 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
+      border-left: 1px solid #000a;
+      padding: 0 0.5rem;
+
+      .item::before {
+        display: inline-block;
+        height: 1rem;
+      }
+    }
+
+    .caelum::before {
+      content: url("../img/Caelum.png");
+    }
+
+    .casa-do-codigo::before {
+      content: url("../img/CasaDoCodigo.png");
+    }
+
+    .alura::before {
+      content: url("../img/Alura.png");
+    }
+
+    .alura-empresas::before {
+      content: url("../img/AluraEmpresas.png");
+    }
+
+    .alura-latam::before {
+      content: url("../img/AluraLatam.png");
+    }
+
+    .alura-start::before {
+      content: url("../img/AluraStart.png");
+    }
+
+    .music-dot::before {
+      content: url("../img/MusicDot.png");
+    }
+
+    .alura-lingua::before {
+      content: url("../img/AluraLingua.png");
+    }
+
+    .pm3::before {
+      content: url("../img/PM3.png");
+    }
+
+    .hipster-tech::before {
+      content: url("../img/HipstersTech.png");
+    }
+
+    .scuba-dev::before {
+      content: url("../img/Scuba.png");
+    }
+
+    .layers-tech::before {
+      content: url("../img/Layers.png");
+    }
+
+    .like-boss::before {
+      content: url("../img/LikeABoss.png");
+    }
+
+    .carreira-fronteira::before {
+      content: url("../img/CarreiraSemFronteira.png");
+    }
+
+    .hipster-jobs::before {
+      content: url("../img/HipstersJobs.png");
+    }
+
+    .guj::before {
+      content: url("../img/GUJ.png");
     }
   }
 }

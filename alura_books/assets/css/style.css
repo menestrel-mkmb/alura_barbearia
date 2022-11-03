@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
 html {
   font-family: "Poppins", sans-serif;
 }
@@ -17,6 +18,14 @@ body {
 
 .sub-title {
   color: #eb9b00;
+}
+
+.logo__link {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.logo__link strong {
+  font-weight: 700;
 }
 
 .header__sect {
@@ -70,10 +79,6 @@ body {
   .header__sect .logo__link span {
     display: flex;
     align-items: flex-end;
-  }
-  .header__sect .logo__link span strong {
-    font-size: 1.8rem;
-    font-weight: 500;
   }
   .header__sect .logo__link:visited {
     color: unset;
@@ -200,7 +205,7 @@ body {
 .footer :nth-child(n+2) {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .footer {
     padding: 1rem 2rem;
     font-size: 0.8rem;
@@ -221,6 +226,60 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.6666666667);
+    padding: 0 0.5rem;
+  }
+  .footer .footer__ul .item::before {
+    display: inline-block;
+    height: 1rem;
+  }
+  .footer .caelum::before {
+    content: url("../img/Caelum.png");
+  }
+  .footer .casa-do-codigo::before {
+    content: url("../img/CasaDoCodigo.png");
+  }
+  .footer .alura::before {
+    content: url("../img/Alura.png");
+  }
+  .footer .alura-empresas::before {
+    content: url("../img/AluraEmpresas.png");
+  }
+  .footer .alura-latam::before {
+    content: url("../img/AluraLatam.png");
+  }
+  .footer .alura-start::before {
+    content: url("../img/AluraStart.png");
+  }
+  .footer .music-dot::before {
+    content: url("../img/MusicDot.png");
+  }
+  .footer .alura-lingua::before {
+    content: url("../img/AluraLingua.png");
+  }
+  .footer .pm3::before {
+    content: url("../img/PM3.png");
+  }
+  .footer .hipster-tech::before {
+    content: url("../img/HipstersTech.png");
+  }
+  .footer .scuba-dev::before {
+    content: url("../img/Scuba.png");
+  }
+  .footer .layers-tech::before {
+    content: url("../img/Layers.png");
+  }
+  .footer .like-boss::before {
+    content: url("../img/LikeABoss.png");
+  }
+  .footer .carreira-fronteira::before {
+    content: url("../img/CarreiraSemFronteira.png");
+  }
+  .footer .hipster-jobs::before {
+    content: url("../img/HipstersJobs.png");
+  }
+  .footer .guj::before {
+    content: url("../img/GUJ.png");
   }
 }
 
@@ -252,7 +311,7 @@ body {
   margin: auto;
   padding: 0 2.5rem;
   min-height: 46px;
-  width: calc(100% - 5rem);
+  width: 80%;
 }
 .banner .inp::before {
   content: url("../img/Pesquisa.svg");
@@ -262,6 +321,18 @@ body {
 }
 .banner .inp:hover {
   background-color: rgba(255, 255, 255, 0.1333333333);
+}
+@media screen and (max-width: 1024px) {
+  .banner .inp {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner .inp {
+    width: 80%;
+    padding: 0;
+    padding-left: 2.5rem;
+  }
 }
 
 .carroussel__artc {
