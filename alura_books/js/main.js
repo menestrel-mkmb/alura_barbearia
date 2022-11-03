@@ -36,6 +36,9 @@ changeEvents();
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
+  centerInsufficientSlides: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
 
   // If we need pagination
   pagination: {
