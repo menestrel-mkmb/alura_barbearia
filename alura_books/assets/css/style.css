@@ -28,6 +28,10 @@ body {
   font-weight: 700;
 }
 
+hr {
+  margin: 0;
+}
+
 .header__sect {
   background-color: #ffffff;
   display: flex;
@@ -225,61 +229,20 @@ body {
   .footer .footer__ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: flex-start;
+    gap: 0.25rem;
     border-left: 1px solid rgba(0, 0, 0, 0.6666666667);
     padding: 0 0.5rem;
   }
-  .footer .footer__ul .item::before {
-    display: inline-block;
-    height: 1rem;
+  .footer .footer__ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
   }
-  .footer .caelum::before {
-    content: url("../img/Caelum.png");
-  }
-  .footer .casa-do-codigo::before {
-    content: url("../img/CasaDoCodigo.png");
-  }
-  .footer .alura::before {
-    content: url("../img/Alura.png");
-  }
-  .footer .alura-empresas::before {
-    content: url("../img/AluraEmpresas.png");
-  }
-  .footer .alura-latam::before {
-    content: url("../img/AluraLatam.png");
-  }
-  .footer .alura-start::before {
-    content: url("../img/AluraStart.png");
-  }
-  .footer .music-dot::before {
-    content: url("../img/MusicDot.png");
-  }
-  .footer .alura-lingua::before {
-    content: url("../img/AluraLingua.png");
-  }
-  .footer .pm3::before {
-    content: url("../img/PM3.png");
-  }
-  .footer .hipster-tech::before {
-    content: url("../img/HipstersTech.png");
-  }
-  .footer .scuba-dev::before {
-    content: url("../img/Scuba.png");
-  }
-  .footer .layers-tech::before {
-    content: url("../img/Layers.png");
-  }
-  .footer .like-boss::before {
-    content: url("../img/LikeABoss.png");
-  }
-  .footer .carreira-fronteira::before {
-    content: url("../img/CarreiraSemFronteira.png");
-  }
-  .footer .hipster-jobs::before {
-    content: url("../img/HipstersJobs.png");
-  }
-  .footer .guj::before {
-    content: url("../img/GUJ.png");
+  .footer .footer__ul a {
+    text-decoration: none;
+    color: #c4c4c4;
   }
 }
 
@@ -371,7 +334,7 @@ body {
   max-height: 254px;
 }
 .carroussel__artc .carroussel__sect .swiper-button-prev, .carroussel__artc .carroussel__sect .swiper-button-next {
-  display: none;
+  display: block;
 }
 
 .suggested-card__sect {
@@ -531,8 +494,4 @@ body {
     align-items: center;
     padding: 0.5rem;
   }
-}
-
-hr {
-  margin: 0;
 }/*# sourceMappingURL=style.css.map */
