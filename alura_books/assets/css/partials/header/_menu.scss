@@ -4,10 +4,31 @@
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  padding-left: 0;
+
+  &__nav {
+    height: 48px;
+    width: 48px;
+  }
 
   &::before {
     content: url("../img/Menu.svg");
+
+    .menu__nav:active &,
+    .menu__nav:hover &,
+    .menu__nav:focus & {
+      background-image: linear-gradient(
+        to right,
+        $color-blue-dark,
+        $color-blue-medium
+      );
+      content: url("../img/MenuAberto.svg");
+
+      margin: auto;
+      padding: .5rem;
+    }
+
+    margin: auto;
+    padding: .5rem;
   }
 
   &__li {

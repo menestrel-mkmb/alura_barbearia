@@ -117,10 +117,21 @@ hr {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  padding-left: 0;
+}
+.menu__nav {
+  height: 48px;
+  width: 48px;
 }
 .menu::before {
   content: url("../img/Menu.svg");
+  margin: auto;
+  padding: 0.5rem;
+}
+.menu__nav:active .menu::before, .menu__nav:hover .menu::before, .menu__nav:focus .menu::before {
+  background-image: linear-gradient(to right, #002f52, #326589);
+  content: url("../img/MenuAberto.svg");
+  margin: auto;
+  padding: 0.5rem;
 }
 .menu__li {
   list-style-type: none;
