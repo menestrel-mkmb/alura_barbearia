@@ -68,9 +68,7 @@
     }
 
     .menu__nav {
-      order: unset;
-
-      margin-right: auto;
+      order: unset;      
 
       .menu__ul {
         .menu__li {
@@ -103,6 +101,10 @@
       a span {
         display: unset;
       }
+    }
+
+    .menu__nav {
+      margin-right: auto;
     }
   }
 }
