@@ -266,17 +266,20 @@ hr {
 }
 .banner .inp {
   background: url("../img/Pesquisa.svg") no-repeat left;
-  background-position: 1rem;
+  background-position: calc(50% - 110px);
   border: 1px solid #ffffff;
   border-radius: 2rem;
   color: #ffffff;
+  text-align: center;
   letter-spacing: 0.06ex;
   display: flex;
   align-items: flex-start;
   margin: auto;
   padding: 0 2.5rem;
   min-height: 46px;
-  width: 80%;
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
 }
 .banner .inp::before {
   content: url("../img/Pesquisa.svg");
@@ -287,14 +290,8 @@ hr {
 .banner .inp:hover {
   background-color: rgba(255, 255, 255, 0.1333333333);
 }
-@media screen and (max-width: 1024px) {
-  .banner .inp {
-    width: 50%;
-  }
-}
 @media screen and (max-width: 480px) {
   .banner .inp {
-    width: 80%;
     padding: 0;
     padding-left: 2.5rem;
   }

@@ -21,10 +21,11 @@
 
   .inp {
     background: url("../img/Pesquisa.svg") no-repeat left;
-    background-position: 1rem;
+    background-position: calc(50% - 110px);
     border: 1px solid $color-white-pure;
     border-radius: 2rem;
     color: $color-white-pure;
+    text-align: center;
     letter-spacing: 0.06ex;
 
     display: flex;
@@ -33,7 +34,9 @@
     margin: auto;
     padding: 0 2.5rem;
     min-height: 46px;
-    width: 80%;
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
 
     &::before {
       content: url("../img/Pesquisa.svg");
@@ -48,15 +51,8 @@
     }
   }
 
-  @media screen and (max-width: 1024px) {
-    .inp {
-      width: 50%;
-    }
-  }
-
   @media screen and (max-width: 480px) {
     .inp {
-      width: 80%;
       padding: 0;
       padding-left: 2.5rem;
     }
